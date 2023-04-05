@@ -1,0 +1,16 @@
+﻿@model tbl_user
+
+
+
+
+ 
+<form asp-controller="Home" asp-action="Login" method="post">
+    Email :    <input required asp-for="user_email" type="text"/>
+    password : <input required asp-for="user_password" type="text"/>
+    <br/>
+
+    <button type="submit" >Login</button>
+</form>
+
+
+<div style="color:red;">@TempData["msg1"]</div>
